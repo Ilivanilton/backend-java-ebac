@@ -22,8 +22,11 @@ public class ExemploArrayList {
     private static void exemploNumeros() {
         System.out.println("****** exemploNumeros ******");
         List<Integer> numeros = new ArrayList<>();
-        numeros.add(1);
         numeros.add(3);
+        numeros.add(1);
+        numeros.add(2);
+        System.out.println(numeros);
+        Collections.sort(numeros);
         System.out.println(numeros);
     }
 

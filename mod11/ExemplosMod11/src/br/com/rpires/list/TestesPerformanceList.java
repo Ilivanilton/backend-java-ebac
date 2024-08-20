@@ -29,7 +29,7 @@ public class TestesPerformanceList {
             lista.remove(i);
         }
         long tFim = System.currentTimeMillis();
-        System.out.println("Tempo total LinkedList Remove: " + (tFim - tInicio));
+        System.out.println("Tempo total LinkedList Remove(+rapido): " + (tFim - tInicio));
     }
 
     private static void testeLinkedListAdd() {
@@ -74,6 +74,6 @@ public class TestesPerformanceList {
             lista.contains(i);
         }
         long tFim = System.currentTimeMillis();
-        System.out.println("Tempo total ArrayList ADD: " + (tFim - tInicio));
+        System.out.println("Tempo total ArrayList ADD(+rapido)1: " + (tFim - tInicio));
     }
 }

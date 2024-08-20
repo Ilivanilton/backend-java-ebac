@@ -32,6 +32,7 @@ public class ExemploLinkedList {
         System.out.println(contem);
 
         System.out.println(lista.get(0));
+        System.out.println("");
     }
 
     private static void exemploListaSimplesOrdemAscendente() {

@@ -5,6 +5,7 @@ import br.com.rpires.domain.ComparaNotaAluno;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 /**
@@ -23,10 +24,13 @@ public class ExemploArrayListAluno {
 
         Aluno a = new Aluno("João da Silva", "Linux básico", 0);
         Aluno b = new Aluno("Antonio Sousa", "OpenOffice", 0);
+        Aluno d = new Aluno("antonio Sousa", "OpenOffice", 0);
         Aluno c = new Aluno("Lúcia Ferreira", "Internet", 0);
         lista.add(a);
         lista.add(b);
+        lista.add(d);
         lista.add(c);
+
         System.out.println(lista);
         Collections.sort(lista);
         System.out.println(lista);
@@ -49,6 +53,9 @@ public class ExemploArrayListAluno {
 
         ComparaNotaAluno comparaNotaAluno = new ComparaNotaAluno();
         Collections.sort(lista, comparaNotaAluno);
+//        Collections.sort(lista, (Aluno o2,
+//                                 Aluno o1) -> Double.compare(o2.getNota(), o1.getNota()));
+//        Collections.sort(lista, Comparator.comparingDouble(Aluno::getNota));
         System.out.println("Lista com ordenação por nota" + lista);
 
         System.out.println("");
